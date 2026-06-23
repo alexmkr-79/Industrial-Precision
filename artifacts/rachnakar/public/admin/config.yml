@@ -1,0 +1,217 @@
+backend:
+  name: git-gateway
+  branch: main
+local_backend: true
+media_folder: "public/uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "architectural-grilles"
+    label: "Architectural Grilles"
+    folder: "content/products/architectural-grilles"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Slug", name: "slug", widget: "string"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Material", name: "material", widget: "string"}
+      - {label: "Dimensions", name: "dimensions", widget: "string"}
+      - {label: "Image", name: "image", widget: "image", required: false}
+      - {label: "Category", name: "category", widget: "hidden", default: "architectural-grilles"}
+
+  - name: "3d-jali-cuts"
+    label: "3D Jali Cuts"
+    folder: "content/products/3d-jali-cuts"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Slug", name: "slug", widget: "string"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Material", name: "material", widget: "string"}
+      - {label: "Dimensions", name: "dimensions", widget: "string"}
+      - {label: "Image", name: "image", widget: "image", required: false}
+      - {label: "Category", name: "category", widget: "hidden", default: "3d-jali-cuts"}
+
+  - name: "metal-milling"
+    label: "Metal Milling"
+    folder: "content/products/metal-milling"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Slug", name: "slug", widget: "string"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Material", name: "material", widget: "string"}
+      - {label: "Dimensions", name: "dimensions", widget: "string"}
+      - {label: "Image", name: "image", widget: "image", required: false}
+      - {label: "Category", name: "category", widget: "hidden", default: "metal-milling"}
+
+  - name: "wood-routing"
+    label: "Wood Routing"
+    folder: "content/products/wood-routing"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Slug", name: "slug", widget: "string"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Material", name: "material", widget: "string"}
+      - {label: "Dimensions", name: "dimensions", widget: "string"}
+      - {label: "Image", name: "image", widget: "image", required: false}
+      - {label: "Category", name: "category", widget: "hidden", default: "wood-routing"}
+
+  - name: "signage"
+    label: "Precision Signage"
+    folder: "content/products/signage"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Slug", name: "slug", widget: "string"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Material", name: "material", widget: "string"}
+      - {label: "Dimensions", name: "dimensions", widget: "string"}
+      - {label: "Image", name: "image", widget: "image", required: false}
+      - {label: "Category", name: "category", widget: "hidden", default: "signage"}
+
+  - name: "facade-panels"
+    label: "Facade Panels"
+    folder: "content/products/facade-panels"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Slug", name: "slug", widget: "string"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Material", name: "material", widget: "string"}
+      - {label: "Dimensions", name: "dimensions", widget: "string"}
+      - {label: "Image", name: "image", widget: "image", required: false}
+      - {label: "Category", name: "category", widget: "hidden", default: "facade-panels"}
+
+  - name: "laser-art"
+    label: "Laser Art Installations"
+    folder: "content/products/laser-art"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Slug", name: "slug", widget: "string"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Material", name: "material", widget: "string"}
+      - {label: "Dimensions", name: "dimensions", widget: "string"}
+      - {label: "Image", name: "image", widget: "image", required: false}
+      - {label: "Category", name: "category", widget: "hidden", default: "laser-art"}
+
+  - name: "furniture-components"
+    label: "Furniture Components"
+    folder: "content/products/furniture-components"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Slug", name: "slug", widget: "string"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Material", name: "material", widget: "string"}
+      - {label: "Dimensions", name: "dimensions", widget: "string"}
+      - {label: "Image", name: "image", widget: "image", required: false}
+      - {label: "Category", name: "category", widget: "hidden", default: "furniture-components"}
+
+  - name: "staircase-elements"
+    label: "Staircase Elements"
+    folder: "content/products/staircase-elements"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Slug", name: "slug", widget: "string"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Material", name: "material", widget: "string"}
+      - {label: "Dimensions", name: "dimensions", widget: "string"}
+      - {label: "Image", name: "image", widget: "image", required: false}
+      - {label: "Category", name: "category", widget: "hidden", default: "staircase-elements"}
+
+  - name: "ceiling-panels"
+    label: "Ceiling Panels"
+    folder: "content/products/ceiling-panels"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Slug", name: "slug", widget: "string"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Material", name: "material", widget: "string"}
+      - {label: "Dimensions", name: "dimensions", widget: "string"}
+      - {label: "Image", name: "image", widget: "image", required: false}
+      - {label: "Category", name: "category", widget: "hidden", default: "ceiling-panels"}
+
+  - name: "partition-screens"
+    label: "Partition Screens"
+    folder: "content/products/partition-screens"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Slug", name: "slug", widget: "string"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Material", name: "material", widget: "string"}
+      - {label: "Dimensions", name: "dimensions", widget: "string"}
+      - {label: "Image", name: "image", widget: "image", required: false}
+      - {label: "Category", name: "category", widget: "hidden", default: "partition-screens"}
+
+  - name: "door-hardware"
+    label: "Door Hardware"
+    folder: "content/products/door-hardware"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Slug", name: "slug", widget: "string"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Material", name: "material", widget: "string"}
+      - {label: "Dimensions", name: "dimensions", widget: "string"}
+      - {label: "Image", name: "image", widget: "image", required: false}
+      - {label: "Category", name: "category", widget: "hidden", default: "door-hardware"}
+
+  - name: "garden-structures"
+    label: "Garden Structures"
+    folder: "content/products/garden-structures"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Slug", name: "slug", widget: "string"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Material", name: "material", widget: "string"}
+      - {label: "Dimensions", name: "dimensions", widget: "string"}
+      - {label: "Image", name: "image", widget: "image", required: false}
+      - {label: "Category", name: "category", widget: "hidden", default: "garden-structures"}
+
+  - name: "industrial-components"
+    label: "Industrial Components"
+    folder: "content/products/industrial-components"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Slug", name: "slug", widget: "string"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Material", name: "material", widget: "string"}
+      - {label: "Dimensions", name: "dimensions", widget: "string"}
+      - {label: "Image", name: "image", widget: "image", required: false}
+      - {label: "Category", name: "category", widget: "hidden", default: "industrial-components"}
+
+  - name: "custom-fabrication"
+    label: "Custom Fabrication"
+    folder: "content/products/custom-fabrication"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Slug", name: "slug", widget: "string"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Material", name: "material", widget: "string"}
+      - {label: "Dimensions", name: "dimensions", widget: "string"}
+      - {label: "Image", name: "image", widget: "image", required: false}
+      - {label: "Category", name: "category", widget: "hidden", default: "custom-fabrication"}
