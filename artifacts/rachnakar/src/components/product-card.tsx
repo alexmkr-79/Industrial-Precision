@@ -27,7 +27,7 @@ export function ProductCard({ product }: ProductCardProps) {
   }
 
   const handleInquiry = (e: React.MouseEvent) => {
-    e.preventDefault(); // Prevent navigating to the product page when clicking the inquiry button
+    e.preventDefault();
     openWhatsAppInquiry({
       productName: product.title,
       category: product.categoryName,
@@ -51,24 +51,24 @@ export function ProductCard({ product }: ProductCardProps) {
           data-testid={`card-product-${product.slug}`}
         >
           <div className="mb-4">
-            <span className="inline-block px-2 py-1 border border-white/10 rounded-sm text-[10px] font-mono tracking-wider text-muted-foreground uppercase bg-white/5 mb-3">
+            <span className="inline-block px-2 py-1 border border-primary/20 rounded-sm text-[10px] font-mono tracking-wider text-primary/70 uppercase bg-primary/5 mb-3">
               {product.categoryName}
             </span>
             <h3 className="font-display text-lg tracking-wide uppercase text-foreground group-hover:text-primary transition-colors">
               {product.title}
             </h3>
           </div>
-          
+
           <div className="flex-grow">
             <p className="text-sm text-muted-foreground line-clamp-2 mb-4">
               {product.description}
             </p>
           </div>
 
-          <div className="space-y-2 mb-6 border-t border-white/5 pt-4">
+          <div className="space-y-2 mb-6 border-t border-primary/10 pt-4">
             <div className="flex items-center gap-2 text-xs font-mono text-secondary">
-              <span className="opacity-50">MAT:</span>
-              <span className="truncate">{product.material}</span>
+              <span className="opacity-60">MAT:</span>
+              <span className="truncate text-foreground/60">{product.material}</span>
             </div>
             <div className="flex items-center gap-2 text-xs font-mono text-muted-foreground">
               <Ruler className="w-3 h-3 opacity-50" />
@@ -77,13 +77,13 @@ export function ProductCard({ product }: ProductCardProps) {
           </div>
 
           <div className="mt-auto">
-            <button 
+            <button
               onClick={handleInquiry}
-              className="w-full py-2.5 px-4 bg-white/5 hover:bg-primary/20 border border-white/10 hover:border-primary/50 text-sm font-medium transition-all flex items-center justify-center gap-2 text-foreground group-hover:text-primary"
+              className="w-full py-2.5 px-4 bg-primary/8 hover:bg-primary hover:text-primary-foreground border border-primary/25 hover:border-primary text-sm font-medium transition-all flex items-center justify-center gap-2 text-foreground group-hover:text-primary hover:!text-primary-foreground"
               data-testid={`button-inquire-${product.slug}`}
             >
               Inquire on WhatsApp
-              <ArrowRight className="w-4 h-4 opacity-50 group-hover:opacity-100 group-hover:translate-x-1 transition-all" />
+              <ArrowRight className="w-4 h-4 opacity-60 group-hover:opacity-100 group-hover:translate-x-1 transition-all" />
             </button>
           </div>
         </motion.div>

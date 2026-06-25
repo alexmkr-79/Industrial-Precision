@@ -68,83 +68,91 @@
 }
 
 :root {
-  --button-outline: rgba(255,255,255, .10);
-  --badge-outline: rgba(255,255,255, .05);
+  --button-outline: rgba(0,0,0, .08);
+  --badge-outline: rgba(0,0,0, .05);
   --opaque-button-border-intensity: 9;
-  --elevate-1: rgba(255,255,255, .04);
-  --elevate-2: rgba(255,255,255, .09);
+  --elevate-1: rgba(255,255,255, .60);
+  --elevate-2: rgba(255,255,255, .80);
 
-  /* Deep obsidian #0D0F12 */
-  --background: 220 13% 7%;
-  /* Text primary #F0F0F0 */
-  --foreground: 0 0% 94%;
-  /* Metallic silver / subtle border rgba(148,163,184,0.2) */
-  --border: 215 19% 65% / 0.2;
-  
-  --card: 0 0% 100% / 0.04;
-  --card-foreground: 0 0% 94%;
-  --card-border: 215 19% 65% / 0.1;
+  /* Warm cream — #F8F3EA */
+  --background: 38 50% 95%;
+  /* Dark charcoal — #2A2218 */
+  --foreground: 35 22% 13%;
+  /* Gold border at low opacity */
+  --border: 43 55% 45% / 0.2;
 
-  --sidebar: 220 13% 7%;
-  --sidebar-foreground: 0 0% 94%;
-  --sidebar-border: 215 19% 65% / 0.2;
-  --sidebar-primary: 24 100% 50%;
-  --sidebar-primary-foreground: 0 0% 94%;
-  --sidebar-accent: 220 13% 15%;
-  --sidebar-accent-foreground: 0 0% 94%;
-  --sidebar-ring: 24 100% 50%;
+  /* Card: warm white glass */
+  --card: 38 60% 98% / 0.70;
+  --card-foreground: 35 22% 13%;
+  --card-border: 43 55% 45% / 0.18;
 
-  --popover: 220 13% 10%;
-  --popover-foreground: 0 0% 94%;
-  --popover-border: 215 19% 65% / 0.2;
+  --sidebar: 38 45% 93%;
+  --sidebar-foreground: 35 22% 13%;
+  --sidebar-border: 43 55% 45% / 0.2;
+  --sidebar-primary: 43 70% 44%;
+  --sidebar-primary-foreground: 38 50% 97%;
+  --sidebar-accent: 38 40% 90%;
+  --sidebar-accent-foreground: 35 22% 13%;
+  --sidebar-ring: 43 70% 44%;
+  --sidebar-primary-border: rgba(201,154,36,0.4);
+  --sidebar-accent-border: rgba(0,0,0,0.08);
 
-  /* Electric Amber #FF6B00 */
-  --primary: 24 100% 50%;
-  --primary-foreground: 0 0% 94%;
+  --popover: 38 50% 97%;
+  --popover-foreground: 35 22% 13%;
+  --popover-border: 43 55% 45% / 0.2;
 
-  /* Precision cyan #00E5FF */
-  --secondary: 186 100% 50%;
-  --secondary-foreground: 220 13% 7%;
+  /* Gold — #C99A24 */
+  --primary: 43 70% 44%;
+  --primary-foreground: 38 50% 97%;
+  --primary-border: rgba(201,154,36,0.4);
 
-  /* Text muted #6B7280 */
-  --muted: 220 9% 46%;
-  --muted-foreground: 220 9% 60%;
+  /* Silver — #9CA3AF */
+  --secondary: 220 10% 65%;
+  --secondary-foreground: 35 22% 13%;
+  --secondary-border: rgba(156,163,175,0.4);
 
-  --accent: 220 13% 15%;
-  --accent-foreground: 0 0% 94%;
+  /* Muted warm gray */
+  --muted: 38 20% 90%;
+  --muted-foreground: 35 10% 45%;
+  --muted-border: rgba(0,0,0,0.06);
 
-  --destructive: 0 84% 60%;
-  --destructive-foreground: 0 0% 94%;
+  --accent: 38 40% 90%;
+  --accent-foreground: 35 22% 13%;
+  --accent-border: rgba(0,0,0,0.06);
 
-  --input: 215 19% 65% / 0.2;
-  --ring: 24 100% 50%;
-  
-  --chart-1: 24 100% 50%;
-  --chart-2: 186 100% 50%;
-  --chart-3: 0 0% 94%;
-  --chart-4: 220 9% 46%;
-  --chart-5: 220 13% 15%;
+  --destructive: 0 72% 51%;
+  --destructive-foreground: 38 50% 97%;
+  --destructive-border: rgba(220,38,38,0.4);
+
+  --input: 43 55% 45% / 0.15;
+  --ring: 43 70% 44%;
+
+  --chart-1: 43 70% 44%;
+  --chart-2: 220 10% 60%;
+  --chart-3: 35 22% 13%;
+  --chart-4: 35 10% 55%;
+  --chart-5: 38 40% 88%;
 
   --app-font-sans: 'Inter', sans-serif;
   --app-font-display: 'Space Grotesk', sans-serif;
   --app-font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --radius: 0rem;
-  
-  --shadow-2xs: 0px 2px 0px 0px rgba(0,0,0,0.1);
-  --shadow-xs: 0px 2px 0px 0px rgba(0,0,0,0.1);
-  --shadow-sm: 0px 2px 0px 0px rgba(0,0,0,0.1), 0px 1px 2px -1px rgba(0,0,0,0.1);
-  --shadow: 0px 2px 0px 0px rgba(0,0,0,0.1), 0px 1px 2px -1px rgba(0,0,0,0.1);
-  --shadow-md: 0px 2px 0px 0px rgba(0,0,0,0.1), 0px 2px 4px -1px rgba(0,0,0,0.1);
-  --shadow-lg: 0px 2px 0px 0px rgba(0,0,0,0.1), 0px 4px 6px -1px rgba(0,0,0,0.1);
-  --shadow-xl: 0px 2px 0px 0px rgba(0,0,0,0.1), 0px 8px 10px -1px rgba(0,0,0,0.1);
-  --shadow-2xl: 0px 2px 0px 0px rgba(0,0,0,0.1);
-  
+
+  --shadow-2xs: 0px 1px 2px 0px rgba(0,0,0,0.06);
+  --shadow-xs: 0px 1px 3px 0px rgba(0,0,0,0.08);
+  --shadow-sm: 0px 2px 4px 0px rgba(0,0,0,0.08), 0px 1px 2px -1px rgba(0,0,0,0.06);
+  --shadow: 0px 2px 6px 0px rgba(0,0,0,0.08), 0px 1px 3px -1px rgba(0,0,0,0.06);
+  --shadow-md: 0px 4px 8px 0px rgba(0,0,0,0.08), 0px 2px 4px -1px rgba(0,0,0,0.06);
+  --shadow-lg: 0px 8px 16px 0px rgba(0,0,0,0.08), 0px 4px 6px -1px rgba(0,0,0,0.06);
+  --shadow-xl: 0px 12px 24px 0px rgba(0,0,0,0.08), 0px 8px 10px -1px rgba(0,0,0,0.06);
+  --shadow-2xl: 0px 20px 40px 0px rgba(0,0,0,0.10);
+
   --tracking-normal: 0em;
   --spacing: 0.25rem;
 }
 
 .dark {
-  /* same as :root because site is dark-only */
+  /* same as :root — this is a light-mode-only site */
 }
 
 @layer base {
@@ -152,21 +160,40 @@
     @apply border-border;
   }
 
+  html {
+    background-color: hsl(38, 50%, 95%);
+  }
+
   body {
     @apply font-sans antialiased bg-background text-foreground;
   }
-  
+
   h1, h2, h3, h4, h5, h6 {
     @apply font-display tracking-wide uppercase;
   }
 }
 
-/* Glassmorphic utilities */
+/* Glassmorphic utilities — light cream edition */
 @layer utilities {
   .glass-panel {
-    @apply bg-white/[0.04] backdrop-blur-[12px] border border-white/10;
+    background: rgba(255, 252, 245, 0.65);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border: 1px solid rgba(201, 154, 36, 0.18);
   }
   .glass-panel-hover {
-    @apply transition-all duration-300 hover:border-primary/50 hover:shadow-[0_0_20px_rgba(255,107,0,0.25)];
+    transition: all 0.3s ease;
+  }
+  .glass-panel-hover:hover {
+    border-color: rgba(201, 154, 36, 0.55);
+    box-shadow: 0 0 24px rgba(201, 154, 36, 0.18), 0 4px 20px rgba(0,0,0,0.06);
+  }
+
+  /* Nav glass on scroll */
+  .glass-nav {
+    background: rgba(250, 246, 236, 0.88);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(201, 154, 36, 0.2);
   }
 }
